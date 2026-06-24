@@ -1,0 +1,151 @@
+/*Базовая настройка всей страницы*/
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+    margin: 0;
+    font-family: 'Helvetica', Arial, sans-serif;
+
+    overflow-x: hidden;
+}
+
+/*весь main контейнер*/
+.page-content {
+    width: 100%;
+    padding-top: calc((147.75 / 1440) * 100vw);
+    box-sizing: border-box;
+}
+
+/*общие настройки макета колонок*/
+.content-columns {
+    display: flex;
+    box-sizing: border-box;
+
+    width: 100%;
+
+}
+
+/*левая колонка*/
+.col-left {
+    /*739 в макете вида 1440px переводим в проценты от экрана*/
+    width: calc((739 / 1440) * 100vw);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    flex-shrink: 0;
+}
+
+.img-top {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.vertical-title-wrapper {
+    margin-top: 36px;
+    margin-left: calc((54 / 1440) * 100vw);
+}
+
+.vertical-title {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: calc((80 / 1440) * 100vw);
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.img-bottom {
+    width: calc((479 / 1440) * 100vw);
+    height: auto;
+    margin-top: 36px;
+    margin-left: calc((54 / 1440) * 100vw);
+}
+
+/*правая колонка*/
+.col-right {
+    width: calc((750 / 1440) * 100vw);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    flex-shrink: 0;
+}
+
+.text-block {
+    font-size: calc((23 / 1440) * 100vw);
+    font-weight: 400;
+    line-height: 120%;
+    margin: 0;
+}
+
+.text-block p {
+    margin: 0;
+}
+
+.text-block p + p {
+    margin-top: 23px;
+}
+
+.text-top {
+    width: calc((566 / 1440) * 100vw);
+    margin-left: calc((46 / 1440) * 100vw);
+}
+
+.img-middle {
+    width: calc((750 / 1440) * 100vw);
+    height: auto;
+    margin-top: 111px;
+    margin-left: calc((-138 / 1440) * 100vw);
+}
+
+.text-bottom {
+    width: calc((750 / 1440) * 100vw);
+    margin-top: 49px;
+    margin-left: calc((-138 / 1440) * 100vw);
+}
+
+/*футер*/
+.page-footer {
+    margin: calc((123 / 1440) * 100vw) calc((30 / 1440) * 100vw) calc((41 / 1440) * 100vw) calc((20 / 1440) * 100vw);
+}
+
+.footer-center {
+    text-align: center;
+    margin-bottom: calc((120 / 1440) * 100vw);
+}
+
+.affiche-link {
+    color: #ACACAC;
+    font-size: calc((16 / 1440) * 100vw);
+    line-height: 100%;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: opacity 0.2s ease;
+}
+
+.affiche-link:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: calc((16 / 1440) * 100vw);
+    line-height: 100%;
+}
+
+.footer-bottom a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.footer-bottom a:hover {
+    opacity: 0.7;
+}
+

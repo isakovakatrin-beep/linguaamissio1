@@ -1,0 +1,59 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.main-content {
+    padding-top: calc((74.75 / 1440) * 100vw);
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/*Секция 1*/
+.hero-title {
+    width: 100%;
+    display: block;
+    background-color: #F0F0F0;
+    flex-shrink: 0;
+}
+
+.svg-title-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*Секция 2*/
+.hero-visual {
+    width: 100%;
+    min-height: 0;
+
+    flex: 1;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.svg-art-img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+}
