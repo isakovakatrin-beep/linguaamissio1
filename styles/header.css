@@ -55,7 +55,6 @@
     color: #FFFFFF;
     text-decoration: none;
 
-    /*параметры тепографии из Фигмы*/
     font-family: 'Helvetica', Arial, sans-serif;
     font-size: calc((15.59 / 1440) * 100vw);
     font-weight: 400;
